@@ -1,0 +1,14 @@
+nav ul li a{
+	color: #FFF !important;
+}
+nav ul li a:hover{
+	color: #000 !important;
+}
+header{
+	margin-bottom: 56px !important;
+}
+link_centralizado {
+text-decoration: none;
+padding-top: 14px;
+padding-left: 20px;
+}

@@ -1,0 +1,4 @@
+Copiar as pastas do caminho https://github.com/Brauliofritzen/sitedocker para dentro de uma pasta
+Dentro do host Docker e executar as instruçoes abaixo dentro da pasta. 
+
+Docker-compose -up d 

@@ -1,0 +1,105 @@
+<?php
+session_start();
+?>
+<!doctype html>
+
+<html lang="pt-br">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link rel="stylesheet" href="css/bootstrap.css">
+
+		<link rel="stylesheet" href="css/personalizado.css">
+
+		<title>FritzenWeb</title>
+
+	</head>
+
+	<body>	
+
+	
+
+		<header>
+
+			<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+
+				<div class="container">
+
+					<a class="navbar-brand" href="index.html">FritzenWeb</a>
+
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+
+						<span class="navbar-toggler-icon"></span>
+
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarCollapse">
+
+						<ul class="navbar-nav mr-auto">
+
+							<li class="nav-item">
+
+								<a class="nav-link" href="login.php">Login </a>
+
+							</li>
+							<li class="nav-item">
+
+								<a class="nav-link" href="contato.php">Contato</a>
+
+							</li>
+
+						</ul>
+
+					</div>
+
+				</div>
+
+			</nav>
+
+		</header>
+		<br><br>
+		<div class="container-fluid">
+		<?php
+
+					if(isset($_SESSION['msg'])){
+
+						echo $_SESSION['msg'];
+
+						unset($_SESSION['msg']);
+
+					}
+
+				?>
+			<div class="form-signin" style="background: #42dea4;">
+			<div class="col-md-12">
+				<h2 class="text-center"  style="margin-top: 20px;">Seja bem Vindo!</h2>
+
+		 <br><br>
+		 <div class="row text-center" style="margin-top: 20px;"> 
+		<h5>Este site foi pensado para facilitar o controle da garantia dos seus equipamentos de hardware e das licenças dos softwares da sua empresa. O funcionanmento é bem simples, pasta fazer o cadastro dos seus equipamentos e dos seus softwares
+ e escolher a melhor data para ser lembrado do vencimento da garantia do seu hardware ou da licença do seu software que na data escolhida você vai ser lembrado por e-mail. <br><br></h5>
+ 	</div>
+						<h4 class="text-center">Simples assim como deve ser!<br><br>
+
+					
+					Você ainda não possui uma conta?</h4><br><br>
+					
+				
+					</div>
+					
+					</div><br>
+					<a href="cadastrar.php" class="btn btn-primary btn-lg btn-block" role="button" aria-pressed="true">Crie grátis</a>
+		</div>	
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+		<script src="js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>
